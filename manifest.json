@@ -1,0 +1,13 @@
+{
+  "name":"YT Notes",
+  "version":"1.0",
+  "description":"Note taking extension for oyutube videos",
+  "manifest_version": 3,
+  "content_scripts":[
+      {
+          "matches":["https://www.instagram.com/*"],
+          "js":["content.js"],
+          "run_at":"document_end"
+      }
+  ]
+}
