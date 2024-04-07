@@ -2,6 +2,7 @@
   "name":"YT Notes",
   "version":"1.0",
   "description":"Note taking extension for oyutube videos",
+  
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html"
