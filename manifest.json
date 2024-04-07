@@ -4,13 +4,7 @@
   "description":"Note taking extension for oyutube videos",
   "manifest_version": 3,
   "action": {
-    "default_popup": "index.html"
-  },
-  "content_scripts":[
-      {
-          "matches":["https://www.youtube.com/*"],
-          "js":["content.js"],
-          "run_at":"document_end"
-      }
-  ]
+    "default_popup": "popup.html"
+  }
+
 }

@@ -1,37 +1,41 @@
 i = 0
-const runScript = async () => {
-    const holder = document.querySelector('div[style="display: flex; flex-direction: column; padding-bottom: 0px; padding-top: 0px; position: relative;"]')
-    
-    if (!holder) {
-        console.log('could not find holder')
-    return
-    }
-    //console.log(typeof holder)
-    const b = holder.querySelectorAll('div[class="_ac7v xzboxd6 xras4av xgc1b0m"]')
-    if (!b) {
-        console.log('could not find b')
-    return
-    }
+// document.querySelector('[type="button"]').addEventListener('click',e=>{
+//     console.log("button clicked")
+// })
+// document.addEventListener('DOMContentLoaded', documentEvents  , false);
 
-    try{
-        if(b[i]){
-        // console.log(b[i])
-        const c = b[i].querySelectorAll('div[class="_aabd _aa8k x2pgyrj xbkimgs xfllauq xh8taat xo2y696"]')
-        console.log(c[0])
-        console.log(c[1])
-        console.log(c[2])
-        i+=1
-        } 
-    } catch(e){
-        console.log(e)
-    }
-
-
-
+document.getElementById("hd").innerHTML="some new text";
+function documentEvents() {    
+    document.getElementById('sb').addEventListener('click', 
+      function() { console.log("button has been clicked");
+    });
 }
 
+const runScript = async () => {
+console.log("asdfgsdgf")
+console.log(document.getElementById("sb"));
+console.log(document.querySelector('[type="button"]'));
+
+//  b.addEventListener('click', 
+// function(){
+// console.log("this is new")
+// });
+
+// "js":["content.js"],
+
+// "content_scripts":[
+//     {
+//         "matches":["https://www.youtube.com/*"],
+//         "js":["content.js"],
+//         "run_at":"document_end"
+//     }
+// ]
+}
+// printText()
 // Run every 500ms
 
-setInterval(function() { 
-    runScript()
-}, 500);
+// runScript()
+// setInterval(function() { 
+//     console.log("hello world")
+//     runScript()
+// }, 500);
