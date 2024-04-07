@@ -54,7 +54,7 @@ function myAction(input) {
 
 function documentEvents() {    
   document.getElementById('ok_btn').addEventListener('click', 
-    function() { var a=document.getElementById('name_textbox'); var ti= document.getElementById('title'); var text=ti.value+"\n----------------\n"+a.value;downloadTextFile(text);
+    function() { var a=document.getElementById('notes_textbox'); var ti= document.getElementById('notes_title_textbox'); var text=ti.value+"\n----------------\n"+a.value;downloadTextFile(text);
   });
 
   function downloadTextFile(content) {
